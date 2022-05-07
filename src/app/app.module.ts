@@ -10,6 +10,8 @@ import { FinalizarCompraComponent } from './components/finalizar-compra/finaliza
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { ToBrazilianCurrencyPipe } from './pipes/to-brazilian-currency.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     ProdutosComponent,
     CarrinhoComponent,
     CadastroComponent,
-    FinalizarCompraComponent
+    FinalizarCompraComponent,
+    LoginComponent,
+    ToBrazilianCurrencyPipe
   ],
   imports: [
     BrowserModule,
