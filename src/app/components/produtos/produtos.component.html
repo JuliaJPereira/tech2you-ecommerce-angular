@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <h3 class="mt-4 text-center">Confira nossas ofertas!</h3>
+
+        <div *ngFor="let produtos of listProdutos$.products | async" class="col-md-3 space-top">
+            <div class="card mt-4" style="width: 18rem;">
+                <img src={{produtos.img_url}} class="card-img-top" alt="personagem.name">
+                <div class="card-body">
+                    <p class="card-nome-produto">{{produtos.name}}</p>
+                    <p class="card-descrição-produto">{{produtos.description}}</p>
+                    <p class="card-preço-antigo">{{produtos.oldPrice}}</p>
+                    <p class="card-preço-novo">{{produtos.price}}</p>
+                    <a href="#" class="btn btn-primary d-flex justify-content-center">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
