@@ -5,7 +5,9 @@
 
         <div *ngFor="let produtos of listProducts" class="col-md-3 space-top">
             <div class="card mt-4" style="width: 18rem;">
-                <img src={{produtos.image}} class="card-img-top" alt="personagem.name">
+                <div class="d-flex justify-content-center">
+                    <img src={{produtos.image}} class="card-img-top " alt="personagem.name">
+                </div>
                 <div class="card-body">
                     <p class="card-nome-produto">{{produtos.name}}</p>
                     <p class="card-descrição-produto">{{produtos.description}}</p>
