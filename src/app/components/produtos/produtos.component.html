@@ -9,8 +9,8 @@
                 <div class="card-body">
                     <p class="card-nome-produto">{{produtos.name}}</p>
                     <p class="card-descrição-produto">{{produtos.description}}</p>
-                    <p class="card-preço-antigo">{{produtos.oldPrice}}</p>
-                    <p class="card-preço-novo">{{produtos.price}}</p>
+                    <p class="card-preço-antigo">{{produtos.oldPrice | toBrazilianCurrency}}</p>
+                    <p class="card-preço-novo">{{produtos.price | toBrazilianCurrency}}</p>
                     <a routerLink="/carrinho" class="btn btn-primary d-flex justify-content-center">Comprar</a>
                 </div>
             </div>
