@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { ToBrazilianCurrencyPipe } from './pipes/to-brazilian-currency.pipe';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ToBrazilianCurrencyPipe } from './pipes/to-brazilian-currency.pipe';
     CadastroComponent,
     FinalizarCompraComponent,
     LoginComponent,
-    ToBrazilianCurrencyPipe
+    ToBrazilianCurrencyPipe,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
