@@ -12,14 +12,18 @@ import { Observable } from 'rxjs';
 })
 export class ProdutosComponent implements OnInit {
 
-  listProdutos$ = new Observable<{ products: Produtos[]}>();
+  listProducts = [] as Produtos[]
 
   constructor(private route: ActivatedRoute,
     private serviceService: ServiceService) { }
 
   ngOnInit(): void {
-    this.listProdutos$ = this.serviceService
-                              .getListProdutos();
+    this.serviceService.getListProdutos().subscribe({
+      next: (value) => {
+        this.listProducts = value.products;
+      }
+    })
+    
   }
 
 }
