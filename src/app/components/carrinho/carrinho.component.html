@@ -3,4 +3,48 @@
         <h3 class="mt-4">Meu Carrinho</h3>
         <hr>
     </div>
+    <!-- Card Produtos -->
+    <div class="card mb-12 d-flex">
+        <div class="row g-0">
+            <!-- Imagem Produto-->
+            <div class="col-md-2">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+            </div>
+            <!-- Descrição Produto -->
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandalia Feminina Anabela Sapato Macio Salto Alto Plataforma</h5>
+                        <p class="card-text"><small class="text-muted">Cor: 03 Caramelo, Tamanho: 38 Alterar
+                            </small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Botões Adicionar + -->
+            <div class="col-md-2 d-flex align-items-center">
+                <div class="d-flex align-items-center align-self-center">
+                    <button type="button" class="btn btn-outline-primary">-</button>
+                    <p>1</p>
+                    <button type="button" class="btn btn-outline-primary">+</button>
+                </div>
+            </div>
+            <!-- Preço -->
+            <div class="col-md-2 d-flex align-items-center">
+                <h3>R$ 64,90</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Preço Final Frete -->
+    <div class="d-flex align-items-end flex-column" style="height: 200px;">
+        <p class="p-2 mt-4 text-muted">Frete: R$ 28,10</p>
+        <div class="d-flex justify-content-between">
+            <p class="mr-auto p-2">Total com frete</p>
+            <h3 class="p-2">R$ 93,09</h3>
+        </div>
+        
+      </div>
+    <!-- Botão Continuar Comprando -->
+    <div class="d-flex justify-content-end">
+        <a routerLink="/produtos" class="btn btn-primary d-flex justify-content-center p-2">Continuar a compra</a>
+      </div>
 </div>
