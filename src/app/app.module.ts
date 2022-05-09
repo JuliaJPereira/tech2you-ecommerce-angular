@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { ToBrazilianCurrencyPipe } from './pipes/to-brazilian-currency.pipe';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { AuthService } from './components/login/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

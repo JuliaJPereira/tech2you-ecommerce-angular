@@ -1,1 +1,27 @@
-<p>login works!</p>
+<div class="container">
+    <div class="row">
+        <h3 class="mt-4">Login</h3>
+        <hr class="col-lg-8">
+
+  
+        <div class="col-md-8">
+            <form>
+                <div class="form-group col-md-4">
+                  <label for="email">Email:</label>
+                  <input [(ngModel)]="usuario.nome"  type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="exemple@email.com">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input [(ngModel)]="usuario.senha"  type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
+                  <small id="emailHelp" class="form-text text-muted">A senha deve conter 6 dígitos</small>
+                </div>
+                <div class="d-flex">
+                    <button type="submit" class="btn btn-primary mt-4" (click)="fazerLogin()">Login</button>
+                <a href="" class="criar-conta">Criar conta</a>
+                </div>
+              </form>
+        </div>
+
+
+    </div>
+</div>
